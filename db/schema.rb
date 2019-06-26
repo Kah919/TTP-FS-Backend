@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2019_06_23_161011) do
     t.string "name"
     t.string "email"
     t.string "password_digest"
-    t.float "balance"
+    t.integer "balance", default: 5000
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
