@@ -18,15 +18,15 @@ ActiveRecord::Schema.define(version: 2019_06_23_161011) do
   create_table "stocks", force: :cascade do |t|
     t.string "name"
     t.string "ticker"
-    t.integer "num_shares"
-    t.float "curr_price"
+    t.float "open_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.integer "used_id"
+    t.integer "user_id"
     t.integer "stock_id"
+    t.integer "num_share"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

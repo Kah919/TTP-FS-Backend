@@ -7,5 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Stock.destroy_all
+Transaction.destroy_all
 
-User.create(name: "test1", email: "test1@gmail.com", password: "test", balance: 5000)
+
+# User.create(name: "test1", email: "test1@gmail.com", password: "test", balance: 5000)
